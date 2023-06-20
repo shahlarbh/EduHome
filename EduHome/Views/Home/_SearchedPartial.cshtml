@@ -1,0 +1,9 @@
+﻿@using EduHome.DataAccessLayer.Entity;
+@model List<Teacher>
+
+    @foreach(var item in Model)
+    {
+        <li class="d-flex px-3">
+            @item.FullName
+        </li>
+    }

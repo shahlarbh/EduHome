@@ -1,0 +1,35 @@
+﻿@using EduHome.DataAccessLayer.Entity;
+@model List<Teacher>
+
+<div class="col-lg-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Fullname</th>
+                            <th>Profession</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        @foreach(var item in Model)
+                        {
+                            <tr>
+                                <td>@item.FullName</td>
+                                <td>@item.Profession</td>
+                                <td>
+                                    <a class="btn btn-warning" asp-controller="teacher" asp-action="details" asp-all-route-id="@item.Id">Details</a>
+                                    <a class="btn btn-warning">Update</a>
+                                    <a class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
