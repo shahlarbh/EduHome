@@ -187,7 +187,7 @@
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" asp-controller="dashboard" asp-action="index">
                             <i class="mdi mdi-home menu-icon"></i>
                             <span class="menu-title">Dashboard</span>
                         </a>
@@ -195,13 +195,13 @@
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                             <i class="mdi mdi-circle-outline menu-icon"></i>
-                            <span class="menu-title">Teacher</span>
+                            <span class="menu-title">Course</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" asp-controller="teacher" asp-action="index" >Teachers</a></li>
-                                <li class="nav-item"> <a class="nav-link" asp-controller="teacher" asp-action="create">Add Teacher</a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-controller="course" asp-action="index" >Course</a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-controller="course" asp-action="create">Add course</a></li>
                             </ul>
                         </div>
                     </li>
@@ -258,8 +258,7 @@
             <!-- partial:partials/_footer.html -->
             <footer class="footer">
                 <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash.com </a>2021</span>
-                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Only the best <a href="https://www.bootstrapdash.com/" target="_blank"> Bootstrap dashboard  </a> templates</span>
+
                 </div>
             </footer>
             <!-- partial -->
